@@ -16,6 +16,9 @@ export class PainelComponent implements OnInit {
 
   public round = 0;
   public roundPhrase: Phrase;
+
+  public progress = 0;
+
   constructor() {
     this.roundPhrase = this.phrases[this.round];
    }
@@ -30,9 +33,11 @@ export class PainelComponent implements OnInit {
 
   public checkAnswer(): void {
     if( this.roundPhrase.phrasePtBr == this.answer){
-      alert("Tradução Ok!");
+      alert('Tradução Ok!');
       // Change answer round
       this.round++;
+      // Progress
+      this.progress = this.progress + (100 / this.phrases.length);
       // Refresh round
       this.roundPhrase = this.phrases[this.round];
       console.log(this.roundPhrase);
