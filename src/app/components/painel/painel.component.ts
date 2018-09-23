@@ -32,7 +32,7 @@ export class PainelComponent implements OnInit {
   }
 
   public checkAnswer(): void {
-    if( this.roundPhrase.phrasePtBr == this.answer){
+    if ( this.roundPhrase.phrasePtBr === this.answer) {
       alert('Tradução Ok!');
       // Change answer round
       this.round++;
@@ -41,7 +41,7 @@ export class PainelComponent implements OnInit {
       // Refresh round
       this.roundPhrase = this.phrases[this.round];
       console.log(this.roundPhrase);
-    }else{
+    } else {
       alert('Translate Incorret!');
     }
 
