@@ -19,6 +19,8 @@ export class PainelComponent implements OnInit {
 
   public progress = 0;
 
+  public tries = 3;
+
   constructor() {
     this.returnAnswer();
    }
@@ -40,7 +42,10 @@ export class PainelComponent implements OnInit {
       // Refresh round
       this.returnAnswer();
     } else {
-      alert('Translate Incorret!');
+      this.tries--;
+      if (this.tries === -1) {
+        alert('Translate Incorret!');
+      }
     }
   }
   public returnAnswer(): void {
