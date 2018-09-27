@@ -1,14 +1,15 @@
 
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
 
 import { Heart } from './../shared/heart.model';
+import { TouchSequence } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-attempts',
   templateUrl: './attempts.component.html',
   styleUrls: ['./attempts.component.css']
 })
-export class AttemptsComponent implements OnInit {
+export class AttemptsComponent implements OnInit, OnChanges {
 
   @Input() public attempts: number;
 
@@ -17,6 +18,13 @@ export class AttemptsComponent implements OnInit {
   ];
 
   constructor() { }
+
+  ngOnChanges() {
+    if (this.attempts !== this.hearts.length) {
+      const indexAttempts = this.hearts.length - this.attempts;
+      this.hearts[indexAttempts - 1].full = false;
+    }
+  }
 
   ngOnInit() {
   }
