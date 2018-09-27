@@ -1,5 +1,5 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { Heart } from './../shared/heart.model';
 
@@ -9,8 +9,8 @@ import { Heart } from './../shared/heart.model';
   styleUrls: ['./attempts.component.css']
 })
 export class AttemptsComponent implements OnInit {
-  public emptyHeart = './assets/coracao_vazio.png';
-  public heartFull = './assets/coracao_cheio.png';
+
+  @Input() public attempts: number;
 
   public hearts: Heart[] = [
     new Heart(true), new Heart(true), new Heart(true)
