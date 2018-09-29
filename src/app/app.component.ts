@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app-learn-english';
+  public finalGame(tipo: string): void {
+console.log(tipo);
+  }
 }
