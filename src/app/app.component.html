@@ -1,6 +1,15 @@
 <app-header></app-header>
 
-<div *ngIf="gameInProgress">
+<div *ngIf="gameInProgress; else endGame">
   <app-painel (finalGame)="finalGame($event)"></app-painel>
 </div>
 
+<ng-template #endGame>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>Infelizmente, você perdeu!</h3>
+      </div>
+    </div>
+  </div>
+</ng-template>
