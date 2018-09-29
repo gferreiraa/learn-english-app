@@ -30,8 +30,9 @@ export class PainelComponent implements OnInit {
   ngOnInit() {
   }
 
+  // tslint:disable-next-line:use-life-cycle-interface
   ngOnDestroy() {
-    console.log('Componente foi destruído');
+
   }
 
   public refreshAnswer( answer: Event): void {
