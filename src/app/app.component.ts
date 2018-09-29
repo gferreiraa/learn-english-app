@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public gameInProgress = true;
+  public finish: string;
   public finalGame(tipo: string): void {
   this.gameInProgress = false;
-  console.log(tipo);
+  this.finish = tipo;
   }
 }
