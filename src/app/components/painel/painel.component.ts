@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, OnDestroy } from '@angular/core';
 
 import { Phrase } from './../shared/phrase.model';
 import { Phrases } from './phrases-mock';
@@ -28,6 +28,10 @@ export class PainelComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  ngOnDestroy() {
+    console.log('Componente foi destruído');
   }
 
   public refreshAnswer( answer: Event): void {

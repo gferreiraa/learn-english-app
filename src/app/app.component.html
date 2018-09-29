@@ -1,2 +1,6 @@
 <app-header></app-header>
-<app-painel (finalGame)="finalGame($event)"></app-painel>
+
+<div *ngIf="gameInProgress">
+  <app-painel (finalGame)="finalGame($event)"></app-painel>
+</div>
+
