@@ -6,3 +6,7 @@
 .header--flag{
   width: 25px;
 }
+
+.header__title{
+  font-size: 20px;
+}
