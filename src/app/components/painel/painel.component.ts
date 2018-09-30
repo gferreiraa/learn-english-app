@@ -41,7 +41,6 @@ export class PainelComponent implements OnInit {
 
   public checkAnswer(): void {
     if ( this.roundPhrase.phrasePtBr === this.answer) {
-      alert('Tradução Ok!');
       // Change answer round
       this.round++;
       // Progress
