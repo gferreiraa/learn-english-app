@@ -9,30 +9,30 @@ Check my [Demo](http://learning-english-game.s3-website-sa-east-1.amazonaws.com/
 ├── [README.md](https://github.com/gferreiraa/learn-english-app) <br>
 ├── angular.json <br>
 ├── dist <br>
-|  └── app-learn-english <br>
+  └── app-learn-english <br>
 ├── e2e <br>
-|  ├── protractor.conf.js <br>
-|  ├── src <br>
-|  └── tsconfig.e2e.json <br>
+  ├── protractor.conf.js <br>
+  ├── src <br>
+  └── tsconfig.e2e.json <br>
 ├── node_modules <br>
-|  ├── ... <br>
+  ├── ... <br>
 ├── package-lock.json <br>
 ├── package.json <br>
 ├── src <br>
-|  ├── app <br>
-|  ├── assets <br>
-|  ├── browserslist <br>
-|  ├── environments <br>
-|  ├── favicon.ico <br>
-|  ├── index.html <br>
-|  ├── karma.conf.js <br>
-|  ├── main.ts <br>
-|  ├── polyfills.ts <br>
-|  ├── styles.css <br>
-|  ├── test.ts <br>
-|  ├── tsconfig.app.json <br>
-|  ├── tsconfig.spec.json <br>
-|  └── tslint.json <br>
+  ├── app <br>
+  ├── assets <br>
+  ├── browserslist <br>
+  ├── environments <br>
+  ├── favicon.ico <br>
+  ├── index.html <br>
+  ├── karma.conf.js <br>
+  ├── main.ts <br>
+  ├── polyfills.ts <br>
+  ├── styles.css <br>
+  ├── test.ts <br>
+  ├── tsconfig.app.json <br>
+  ├── tsconfig.spec.json <br>
+  └── tslint.json <br>
 ├── tsconfig.json <br>
 └── tslint.json <br>
 
