@@ -4,6 +4,19 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Check my [Demo](http://learning-english-game.s3-website-sa-east-1.amazonaws.com/)
 
+## Project Tree
+
+├── [README.md](https://github.com/gferreiraa/learn-english-app) <br>
+├── angular.json <br>
+├── dist <br>
+├── e2e <br>
+├── node_modules <br>
+├── package-lock.json <br>
+├── package.json <br>
+├── src <br>
+├── tsconfig.json <br>
+└── tslint.json <br>
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
